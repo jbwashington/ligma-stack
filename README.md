@@ -36,6 +36,7 @@ This boilerplate is configured to provide a solid foundation for building scalab
 - **Database**: [Prisma](https://www.prisma.io/), [PostgreSQL](https://www.postgresql.org/) (configurable)
 - **Styling**: TailwindCSS and Shadcn
 - **Authentication**: NextAuth
+- **Payment Integration**: Stripe (coming soon!)
 
 ## Getting Started
 
@@ -76,21 +77,27 @@ Make sure you have the following installed:
 
 ```plaintext
 .
-├── src
-│   ├── components
-│   ├── contexts
-│   ├── pages
-│   │   ├── api
+├── app
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── ui
+│   │   ├── alert-dialog.tsx
+│   │   ├── button.tsx
+│   │   ├── dropdown-menu.tsx
 │   │   └── ...
-│   ├── styles
-│   ├── utils
+│   ├── main-nav.tsx
+│   ├── page-header.tsx
 │   └── ...
-├── tests
-├── .eslintrc.js
-├── .gitignore
-├── .prettierrc
-├── jest.config.js
-└── next.config.js
+├── lib
+│   └── utils.ts
+├── styles
+│   └── globals.css
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
 ```
 
 ### Running Locally
