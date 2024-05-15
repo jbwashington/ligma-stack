@@ -34,9 +34,10 @@ This boilerplate is configured to provide a solid foundation for building scalab
 - **Frontend**: [Next.js](https://nextjs.org/), [React](https://reactjs.org/)
 - **Backend**: [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
 - **Database**: [Prisma](https://www.prisma.io/), [PostgreSQL](https://www.postgresql.org/) (configurable)
-- **Styling**: TailwindCSS and Shadcn
-- **Authentication**: NextAuth
-- **Payment Integration**: Stripe (coming soon!)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **Components**: [Shadcn](https://ui.shadcn.com/)
+- **Authentication**: [NextAuth](https://next-auth.js.org/)
+- **Payment Integration**: [Stripe](https://stripe.com/) (coming soon!)
 
 ## Getting Started
 
@@ -51,27 +52,27 @@ Make sure you have the following installed:
 
 1. **Clone the repository:**
 
-    ```sh
-    git clone https://github.com/jbwashington/ligma-stack.git
-    cd ligma-stack
-    ```
+   ```sh
+   git clone https://github.com/jbwashington/ligma-stack.git
+   cd ligma-stack
+   ```
 
 2. **Install dependencies:**
 
-    ```sh
-    pnpm install
-    # or
-    npm install
-    ```
+   ```sh
+   pnpm install
+   # or
+   npm install
+   ```
 
 3. **Environment variables:**
 
-    Rename `.env.example` to `.env.local` file and add your environment variables. For example:
+   Rename `.env.example` to `.env.local` file and add your environment variables. For example:
 
-    ```env
-    DATABASE_URL=postgresql://user:password@localhost:5432/mydb
-    JWT_SECRET=your_jwt_secret
-    ```
+   ```env
+   DATABASE_URL=postgresql://user:password@localhost:5432/mydb
+   JWT_SECRET=your_jwt_secret
+   ```
 
 ### Folder Structure
 
@@ -101,6 +102,7 @@ Make sure you have the following installed:
 ```
 
 ### Running Locally
+
 To start the development server, run:
 
 `yarn dev` or `npm run dev`
@@ -108,12 +110,15 @@ To start the development server, run:
 Your app should now be running on http://localhost:3000.
 
 ### Deployment
+
 To deploy your application, you can use SST, Vercel or any other hosting services. Make sure to set up the necessary environment variables in your hosting platform.
 
 ### Contributing
+
 Thank you for considering contributing to this project! Feel free to open issues or submit pull requests.
 
 ### Steps to contribute
+
 Fork the repository.
 Create a new branch: git checkout -b feature/your-feature-name
 Make your changes.
@@ -122,7 +127,7 @@ Push to the branch: git push origin feature/your-feature-name
 Open a pull request.
 
 ### License
-This project is licensed under the MIT License. See the LICENSE file for more information.
 
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
 Feel free to customize this template further based on your specific needs and preferences!
