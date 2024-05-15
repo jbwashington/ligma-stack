@@ -1,0 +1,11 @@
+# Next.js
+.next/
+node_modules/
+dist/
+
+# Logs
+logs/
+
+# Environment Variables
+.env.local
+.env
