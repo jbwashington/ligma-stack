@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/layout/theme-provider";
+import Header from "@/components/layout/header";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { Toaster } from "sonner";
+import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -26,7 +31,13 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          <div className="flex-grow">{children}</div>
+          <SiteFooter />
+          <Toaster />
+          <TailwindIndicator />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -111,7 +111,11 @@ Your app should now be running on http://localhost:3000.
 
 ### Deployment
 
-To deploy your application, you can use SST, Vercel or any other hosting services. Make sure to set up the necessary environment variables in your hosting platform.
+To deploy your application, you can use SST, which deploys seamlessly to AWS. Make sure to set up the necessary environment variables in your hosting platform:
+
+- install awscli
+- configure secret key
+- configure awscli
 
 ### Contributing
 
