@@ -57,6 +57,11 @@ Make sure you have the following installed:
    cd ligma-stack
    ```
 
+2. **Setup AWS account:**
+- configure secret key in AWS Console
+- install awscli
+- configure awscli
+
 2. **Install dependencies:**
 
    ```sh
@@ -111,11 +116,7 @@ Your app should now be running on http://localhost:3000.
 
 ### Deployment
 
-To deploy your application, you can use SST, which deploys seamlessly to AWS. Make sure to set up the necessary environment variables in your hosting platform:
-
-- install awscli
-- configure secret key
-- configure awscli
+To deploy your application, we are using SST, which deploys seamlessly to AWS.
 
 ### Contributing
 
