@@ -7,6 +7,7 @@ import Header from "@/components/layout/header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Toaster } from "sonner";
 import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
+import { siteConfig } from "@/config/site";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -14,8 +15,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "LIGMA Stack",
-  description: "Modern Full Stack Starter Template",
+  title: siteConfig.name,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
