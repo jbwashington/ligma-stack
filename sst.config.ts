@@ -9,6 +9,11 @@ export default $config({
     };
   },
   async run() {
-    const web = new sst.aws.Nextjs("LIGMAWeb");
+    const bucket = new sst.aws.Bucket("LIGMAS3", {
+      public: true,
+    });
+    new sst.aws.Nextjs("LIGMAWeb", {
+      link: [bucket]
+    });
   },
 });
