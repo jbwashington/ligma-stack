@@ -12,8 +12,12 @@ export default $config({
     const bucket = new sst.aws.Bucket("LIGMAS3", {
       public: true,
     });
-    new sst.aws.Nextjs("LIGMAWeb", {
-      link: [bucket]
+    const email = new sst.aws.Email("LIGMAEmail", {
+      sender: "admin@fullstacktechnyc.com",
     });
+    new sst.aws.Nextjs("LIGMAWeb", {
+      link: [bucket, email]
+    });
+
   },
 });
