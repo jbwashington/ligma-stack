@@ -3,8 +3,6 @@ import { PrismaClient } from "@prisma/client";
 import { PrismaNeon } from "@prisma/adapter-neon";
 import { Pool } from "@neondatabase/serverless";
 
-export const runtime = "edge";
-
 declare global {
   var prisma: PrismaClient | undefined;
 }

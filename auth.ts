@@ -1,20 +1,17 @@
 import NextAuth from "next-auth";
 import GitHub from "next-auth/providers/github";
-import Credentials from "next-auth/providers/credentials";
+// import Credentials from "next-auth/providers/credentials";
 // import EmailProvider from "next-auth/providers/nodemailer";
-import { PrismaClient } from "@prisma/client";
-import { PrismaAdapter } from "@auth/prisma-adapter";
-import { PrismaNeon } from "@prisma/adapter-neon";
-import { Pool } from "@neondatabase/serverless";
-// import { Resource } from "sst";
-// import { SESv2Client, SendEmailCommand } from "@aws-sdk/client-sesv2";
+import { PrismaClient } from "@prisma/client"
+import { PrismaAdapter } from "@auth/prisma-adapter"
+import { PrismaNeon } from "@prisma/adapter-neon"
+import { Pool } from "@neondatabase/serverless"
 
 const neon = new Pool({
   connectionString: process.env.AUTH_POSTGRES_PRISMA_URL,
-});
-
-const adapter = new PrismaNeon(neon);
-const prisma = new PrismaClient({ adapter });
+})
+const adapter = new PrismaNeon(neon)
+const prisma = new PrismaClient({ adapter })
 
 export const {
   auth,
@@ -43,27 +40,9 @@ export const {
     },
   },
   callbacks: {
-    async jwt({ token, user }) {
-      const dbUser = await prisma.user.findFirst({
-        where: {
-          email: token.email,
-        },
-      });
-
-      if (!dbUser) {
-        if (user) {
-          token.id = user?.id;
-        }
-        console.log(token)
-        return token;
-      }
-
-      return {
-        id: dbUser.id,
-        name: dbUser.name,
-        email: dbUser.email,
-        picture: dbUser.image,
-      };
+    jwt({ token, trigger, session }) {
+      if (trigger === "update") token.name = session?.user?.name;
+      return token;
     },
   },
 });
