@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/layout/theme-provider";
-import Header from "@/components/layout/header";
-import { SiteFooter } from "@/components/layout/site-footer";
+import { ThemeProvider } from "@/app/components/layout/theme-provider";
+import Header from "@/app/components/layout/header";
+import { SiteFooter } from "@/app/components/layout/site-footer";
 import { Toaster } from "sonner";
-import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
+import { TailwindIndicator } from "@/app/components/layout/tailwind-indicator";
 import { siteConfig } from "@/config/site";
 
 const fontSans = FontSans({

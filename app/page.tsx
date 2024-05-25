@@ -1,5 +1,5 @@
-import { FeaturesSection } from "@/components/layout/features-section";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { FeaturesSection } from "@/app/components/layout/features-section";
+import { Button, buttonVariants } from "@/app/components/ui/button";
 import { homeConfig } from "@/config/marketing";
 
 export default function Home() {

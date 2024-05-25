@@ -18,7 +18,7 @@ export const marketingConfig: MarketingConfig = {
 };
 
 export const homeConfig = {
-  heading: "From idea to MVP in weeks, not months",
+  heading: "From idea to MVP in weeks, not months.",
   subHeading: "No matter what the problem is, we can come up with a solution.",
   btnText: "Book a meeting",
 };

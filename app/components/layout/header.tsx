@@ -11,13 +11,13 @@ export default function Header() {
       <MainNav items={marketingConfig.mainNav} />
       <nav>
         <Link
-          href="/login"
+          href="mailto:admin@fullstacktechnyc.com"
           className={cn(
-            buttonVariants({ variant: "secondary", size: "sm" }),
+            buttonVariants({ variant: "outline", size: "sm" }),
             "px-4"
           )}
         >
-          Login
+          Contact
         </Link>
       </nav>
     </div>
