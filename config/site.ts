@@ -1,13 +1,13 @@
 import { SiteConfig } from "@/types"
 
 export const siteConfig: SiteConfig = {
-  name: "LIGMA Stack",
-  description: "From the rooter to the tooter",
-  url: "https://github.com/jbwashington/ligma-stack",
+  name: "Full Stack Tech",
+  description: "NYC-Based Digital Design + Development",
+  url: process.env.NEXT_PUBLIC_SERVER_URL as string,
   // # TODO: fix the ogImage
-  ogImage: "https://github.com/jbwashington/ligma-stack/public/og.jpg",
+  ogImage: `${process.env.NEXT_PUBLIC_SERVER_URL}/public/og.jpg`,
   links: {
-    twitter: "https://twitter.com/jtothadub_",
-    instagram: "https://instagram.com/jtothadub",
+    twitter: "https://twitter.com/fullstacktechnyc",
+    instagram: "https://instagram.com/fullstacktechnyc",
   },
 };

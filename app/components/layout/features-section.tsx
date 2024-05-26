@@ -2,7 +2,7 @@ import { featuresConfig } from "@/config/marketing";
 
 export const FeaturesSection = async () => {
   return (
-    <section className="container space-y-6 py-8 md:py-12 lg:py-24">
+    <section className="p-24 space-y-4">
       <div className="mx-auto flex max-w-[58rem] flex-col space-y-4">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Features
