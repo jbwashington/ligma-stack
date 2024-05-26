@@ -18,9 +18,10 @@ export const marketingConfig: MarketingConfig = {
 };
 
 export const homeConfig = {
-  heading: "From idea to MVP in weeks, not months.",
-  subHeading: "No matter what the problem is, we can come up with a solution.",
+  heading: "Digital Design + Development",
+  subHeading: "Based in NYC, delivering worldwide.",
   btnText: "Book a meeting",
+  btnURL: "#booking",
 };
 
 export const featuresConfig = {
@@ -60,4 +61,9 @@ export const featuresConfig = {
   ],
   extraValue:
     "Full Stack Tech also offers 24/7 Support to meet your organization's response needs",
+};
+
+export const bookingConfig = {
+  title: "Get Started",
+  subtitle: "Let's figure out how to build this product together.",
 };

@@ -1,12 +1,9 @@
 import { featuresConfig } from "@/config/marketing";
 
-export const FeaturesSection = () => {
+export const FeaturesSection = async () => {
   return (
-    <section
-      id="features"
-      className="container space-y-6 py-8 md:py-12 lg:py-24"
-    >
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+    <section className="container space-y-6 py-8 md:py-12 lg:py-24">
+      <div className="mx-auto flex max-w-[58rem] flex-col space-y-4">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Features
         </h2>
@@ -14,10 +11,10 @@ export const FeaturesSection = () => {
           {featuresConfig.description}
         </p>
       </div>
-      <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+      <div className="mx-auto grid gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
         {featuresConfig.features.map((feature, index) => (
           <div
-            className="flex h-[180px] flex-col justify-between rounded-md p-6"
+            className="flex h-[180px] flex-col rounded-md p-6"
             key={index}
           >
             <div className="space-y-2">
@@ -29,7 +26,7 @@ export const FeaturesSection = () => {
           </div>
         ))}
       </div>
-      <div className="mx-auto text-center md:max-w-[58rem]">
+      <div className="mx-auto md:max-w-[58rem]">
         <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
           {featuresConfig.extraValue}
         </p>
