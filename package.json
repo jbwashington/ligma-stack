@@ -7,11 +7,10 @@
   "private": true,
   "scripts": {
     "build": "prisma generate && prisma db push && next build",
-    "dev": "prisma generate && sst dev \"next dev --turbo\"",
+    "dev": "prisma generate && next dev --turbo",
     "lint": "next lint",
     "start": "next start",
-    "postinstall": "prisma generate",
-    "deploy": "prisma generate && prisma db push && sst deploy"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.1.0",
