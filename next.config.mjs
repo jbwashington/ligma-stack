@@ -1,4 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withContentlayer } from "next-contentlayer"
 
-export default nextConfig;
+import "./env.mjs"
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["avatars.githubusercontent.com"],
+  },
+}
+
+export default withContentlayer(nextConfig)
