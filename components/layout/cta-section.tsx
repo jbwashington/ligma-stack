@@ -1,4 +1,4 @@
-import { Button, buttonVariants } from "@/app/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { homeConfig } from "@/config/marketing";
 import Link from "next/link";
 

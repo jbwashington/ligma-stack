@@ -29,7 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated",
-    "content/projects/lettas-fight.mdx"
   ],
   "exclude": ["node_modules", "sst.config.ts"]
 }
