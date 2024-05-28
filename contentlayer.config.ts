@@ -13,6 +13,10 @@ const computedFields: ComputedFields<"Project" | "Post" | "Page"> = {
     type: "string",
     resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
   },
+  url: {
+    type: "string",
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+  },
 };
 
 export const Project = defineDocumentType(() => ({
