@@ -1,19 +1,20 @@
 import { Project } from "contentlayer/generated";
 import Link from "next/link";
-import { Mdx } from "./mdx-components";
+import { Card, CardTitle } from "./ui/card";
+import Image from "next/image";
 
 export const ProjectCard = async (project: Project) => {
   return (
-    <div className="mb-8">
-      <h2 className="mb-1 text-xl">
-        <Link
-          href={project.url}
-          className="text-blue-700 hover:text-blue-900 dark:text-blue-400"
-        >
-          {project.title}
-        </Link>
-      </h2>
-      <Mdx code={project.body.code} />
-    </div>
+    <Link href={project.url}>
+      <Card className="mb-8">
+        <Image
+          src={project.image}
+          alt={`Image for ${project.title}`}
+          width={350}
+          height={350}
+        />
+        <CardTitle>{project.title}</CardTitle>
+      </Card>
+    </Link>
   );
 };

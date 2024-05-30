@@ -1,3 +1,4 @@
+import React from "react"
 import Image from "next/image"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
