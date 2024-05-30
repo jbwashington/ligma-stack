@@ -1,7 +1,7 @@
 import { FeaturesSection } from "@/components/layout/features-section";
 import { BookingSection } from "../components/layout/booking";
 import { CTASection } from "../components/layout/cta-section";
-import { allPosts, allProjects } from "contentlayer/generated";
+import { allPosts, allProjects as projects } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { PostsSection } from "../components/layout/posts-section";
 import { ProjectsSection } from "../components/layout/projects-section";
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <CTASection />
-      <ProjectsSection projects={allProjects} />
+      <ProjectsSection projects={projects} />
       <PostsSection posts={posts} />
       <FeaturesSection />
       <BookingSection />

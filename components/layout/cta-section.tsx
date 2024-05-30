@@ -6,7 +6,7 @@ export const CTASection = async () => {
   return (
     <section className="p-24 space-y-4">
       <p className="text-4xl font-extrabold">{homeConfig.heading}</p>
-      <p className="text-2xl font-light">{homeConfig.subHeading}</p>
+      <p className="text-2xl font-light pb-4">{homeConfig.subHeading}</p>
       <Link href={homeConfig.btnURL}>
         <Button
           className={buttonVariants({
