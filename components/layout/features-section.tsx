@@ -1,8 +1,9 @@
 import { featuresConfig } from "@/config/marketing";
+import { SectionWrapper } from "../typography";
 
 export const FeaturesSection = async () => {
   return (
-    <section className="bg-foreground text-background container py-6">
+    <SectionWrapper inverted>
       <div className="mx-auto flex max-w-[58rem] flex-col space-y-4">
         <p className="max-w-[85%] leading-normal sm:text-lg sm:leading-7">
           {featuresConfig.description}
@@ -15,7 +16,7 @@ export const FeaturesSection = async () => {
               <div className="inline-flex space-x-4">
                 {feature.icons &&
                   feature.icons.map((Icon, index) => (
-                    <div  key={index}>
+                    <div key={index}>
                       <Icon className="w-4 h-4" />
                     </div>
                   ))}
@@ -26,6 +27,6 @@ export const FeaturesSection = async () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 };

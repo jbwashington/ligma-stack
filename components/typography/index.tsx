@@ -89,3 +89,31 @@ export function P({
     </p>
   );
 }
+
+
+export function SectionWrapper({
+  className,
+  inverted,
+  children,
+  id,
+}: {
+  className?: string | null;
+  inverted?: boolean;
+  children: React.ReactNode;
+  id?: string;
+}) {
+  return (
+    <section
+      id={id}
+      className={cn(
+        "p-24 space-y-4",
+        inverted
+          ? "bg-foreground text-background"
+          : "bg-background text-foreground",
+        className
+      )}
+    >
+      {children}
+    </section>
+  );
+}
