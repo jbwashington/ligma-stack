@@ -1,35 +1,91 @@
-export function H1({ children }: { children: React.ReactNode }) {
+import { cn } from "@/lib/utils";
+
+export function H1({
+  className,
+  children,
+}: {
+  className?: string | null;
+  children: React.ReactNode;
+}) {
   return (
-    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+    <h1
+      className={cn(
+        "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
+        className
+      )}
+    >
       {children}
     </h1>
   );
 }
 
-export function H2({ children }: { children: React.ReactNode }) {
+export function H2({
+  className,
+  children,
+}: {
+  className?: string | null;
+  children: React.ReactNode;
+}) {
   return (
-    <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+    <h2
+      className={cn(
+        "scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0",
+        className
+      )}
+    >
       {children}
     </h2>
   );
 }
 
-export function H3({ children }: { children: React.ReactNode }) {
+export function H3({
+  className,
+  children,
+}: {
+  className?: string | null;
+  children: React.ReactNode;
+}) {
   return (
-    <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+    <h3
+      className={cn(
+        "scroll-m-20 text-2xl font-semibold tracking-tight",
+        className
+      )}
+    >
       {children}
     </h3>
   );
 }
 
-export function H4({ children }: { children: React.ReactNode }) {
+export function H4({
+  className,
+  children,
+}: {
+  className?: string | null;
+  children: React.ReactNode;
+}) {
   return (
-    <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+    <h4
+      className={cn(
+        "scroll-m-20 text-xl font-semibold tracking-tight",
+        className
+      )}
+    >
       {children}
     </h4>
   );
 }
 
-export function P({ children }: { children: React.ReactNode }) {
-  return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>;
+export function P({
+  className,
+  children,
+}: {
+  className?: string | null;
+  children: React.ReactNode;
+}) {
+  return (
+    <p className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}>
+      {children}
+    </p>
+  );
 }
