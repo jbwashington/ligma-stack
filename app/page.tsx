@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <CTASection />
+      <FeaturesSection />
       <ProjectsSection projects={projects} />
       <PostsSection posts={posts} />
-      <FeaturesSection />
       <BookingSection />
     </>
   );
