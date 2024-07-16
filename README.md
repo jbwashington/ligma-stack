@@ -6,6 +6,7 @@ Welcome to the LIGMA Stack! This project serves as a starting point for full sta
 
 - [Overview](#overview)
 - [Features](#features)
+- [Roadmap](#roadmap)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
@@ -28,6 +29,14 @@ This boilerplate is configured to provide a solid foundation for building scalab
 - **Styling**: Configured with CSS-in-JS library (e.g., styled-components).
 - **Linting and Formatting**: ESLint and Prettier configured for code quality.
 - **Unit and Integration Testing**: Jest and React Testing Library setup for testing.
+- **Client side validation**: using **Zod**
+
+## Roadmap
+- [x] ~Add MDX support for basic pages~
+- [ ] Payments using Stripe
+- [ ] Responsive styles
+- [ ] Add OG image for blog using @vercel/og
+- [ ] Build marketing pages
 
 ## Tech Stack
 
@@ -37,7 +46,7 @@ This boilerplate is configured to provide a solid foundation for building scalab
 - **Styling**: [TailwindCSS](https://tailwindcss.com/)
 - **Components**: [Shadcn](https://ui.shadcn.com/)
 - **Authentication**: [NextAuth](https://next-auth.js.org/)
-- **Payment Integration**: [Stripe](https://stripe.com/) (coming soon!)
+- **Payment Integration**: [Stripe](https://stripe.com/)
 
 ## Getting Started
 
