@@ -3,12 +3,12 @@
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 
-export const BookingForm = ({ calLink }: { calLink: string }) => {
+export const BookingForm = () => {
   useEffect(() => {
     (async function () {
-      const Cal = await getCalApi();
-      Cal("ui", {
-        layout: "column_view",
+      const cal = await getCalApi({ namespace: "45-min-meeting" });
+      cal("ui", {
+        layout: "month_view",
         hideEventTypeDetails: true,
         // More CSS variables are defined here
         // https://github.com/calcom/cal.com/blob/b0ca7dae1a17f897e34b83c990f30ab65f615ee0/packages/config/tailwind-preset.js#L69
@@ -21,7 +21,7 @@ export const BookingForm = ({ calLink }: { calLink: string }) => {
             "cal-bg": "hsl(0 0% 100%)", // background
             "cal-bg-emphasis": "hsl(0 0% 96.1%)", // accent
             "cal-bg-muted": "hsl(0 0% 96.1%)", // muted
-            "scrollbar": "rounded",
+            scrollbar: "rounded",
           },
           dark: {
             "cal-brand": "hsl(0 0% 98%)", // primary
@@ -31,7 +31,7 @@ export const BookingForm = ({ calLink }: { calLink: string }) => {
             "cal-bg": "hsl(0 0% 3.9%)", // background
             "cal-bg-emphasis": "hsl(0 0% 14.9%)", // accent
             "cal-bg-muted": "hsl(0 0% 14.9%)", // muted
-            "scrollbar": "dark",
+            scrollbar: "dark",
           },
         },
       });
@@ -40,7 +40,11 @@ export const BookingForm = ({ calLink }: { calLink: string }) => {
 
   return (
     <>
-      <Cal calLink={calLink} />
+      <Cal
+        namespace="45-min-meeting"
+        config={{ layout: "month_view" }}
+        calLink="jbwashington/45-min-meeting"
+      />
     </>
   );
 };
