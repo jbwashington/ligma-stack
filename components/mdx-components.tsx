@@ -3,6 +3,10 @@ import Image from "next/image";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { cn } from "@/lib/utils";
 import { MdxCard } from "./mdx-card";
+import { PricingTable } from "./pricing-table";
+import { ServicesTable } from "./services-table";
+import { Button } from "./ui/button";
+import { CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 interface MdxProps {
   code: string;
@@ -15,6 +19,12 @@ interface MdxElementProps {
 const components = {
   Image,
   Card: MdxCard,
+  Button,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+  PricingTable, 
+  ServicesTable,
   h1: ({ className, ...props }: MdxElementProps) => (
     <h1
       className={cn(

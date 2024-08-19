@@ -5,16 +5,12 @@ import { time } from "console";
 export const marketingConfig: MarketingConfig = {
   mainNav: [
     {
+      title: "Pricing",
+      href: "/pricing",
+    },
+    {
       title: "About",
       href: "/about",
-    },
-    {
-      title: "Projects",
-      href: "/projects",
-    },
-    {
-      title: "Articles",
-      href: "/posts",
     },
   ],
 };
