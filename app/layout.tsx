@@ -8,11 +8,13 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { Toaster } from "sonner";
 import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
 import { siteConfig } from "@/config/site";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+// const fontSans = FontSans({
+//   subsets: ["latin"],
+//   variable: "--font-sans",
+// });
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -29,7 +31,8 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background text-foreground font-sans antialiased",
-          fontSans.variable
+          GeistSans.variable,
+          GeistMono.variable,
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
