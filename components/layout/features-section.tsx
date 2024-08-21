@@ -26,7 +26,7 @@ export const FeaturesSection = async () => {
           </div>
         ))}
       </div>
-      <Link href="/pricing" className={buttonVariants({ variant: "default" })}>
+      <Link href="/pricing" className={buttonVariants({ variant: "default", className: "rounded-3xl capitalize" })}>
         Explore packages <Icons.chevronRight className="w-4 h-4" />
       </Link>
     </SectionWrapper>

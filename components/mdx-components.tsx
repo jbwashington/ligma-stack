@@ -7,6 +7,7 @@ import { PricingTable } from "./pricing-table";
 import { ServicesTable } from "./services-table";
 import { Button } from "./ui/button";
 import { CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { FAQSection } from "./faq-section";
 
 interface MdxProps {
   code: string;
@@ -25,6 +26,7 @@ const components = {
   CardTitle,
   PricingTable, 
   ServicesTable,
+  FAQSection,
   h1: ({ className, ...props }: MdxElementProps) => (
     <h1
       className={cn(

@@ -13,11 +13,37 @@ export const marketingConfig: MarketingConfig = {
       href: "/about",
     },
   ],
+  footerNav: [
+    {
+      title: "About",
+      href: "/about",
+    },
+    {
+      title: "Pricing",
+      href: "/pricing",
+    },
+    {
+      title: "Services",
+      href: "/services",
+    },
+    {
+      title: "Frequently Asked Questions",
+      href: "/faq",
+    },
+    {
+      title: "Terms and Conditions",
+      href: "/terms",
+    },
+    {
+      title: "Privacy Policy",
+      href: "/privacy",
+    },
+  ],
 };
 
 export const homeConfig = {
-  heading: "From idea to MVP, on time, within budget",
-  subHeading: "Custom digital products for business builders and innovators.",
+  heading: "Custom software solutions for businesses",
+  subHeading: "Delivering industry standard web applications with no ambiguity.",
   btnText: "Get started",
   btnURL: "/pricing",
   featureBtnText: "Contact sales",

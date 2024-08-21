@@ -8,7 +8,7 @@ export const siteConfig: SiteConfig = {
   // # TODO: fix the ogImage
   ogImage: `${env.NEXT_PUBLIC_SERVER_URL}/public/og.jpg` as string,
   links: {
-    twitter: "https://twitter.com/fullstacktechnyc",
+    twitter: "https://x.com/fullstack_nyc",
     instagram: "https://instagram.com/fullstacktechnyc",
   },
 };

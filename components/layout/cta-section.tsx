@@ -3,17 +3,20 @@ import { homeConfig } from "@/config/marketing";
 import Link from "next/link";
 import { SectionWrapper } from "../typography";
 import { Icons } from "./icons";
+import { siteConfig } from "@/config/site";
 
 export const CTASection = async () => {
   return (
-    <SectionWrapper>
-      <p className="text-4xl font-extrabold">{homeConfig.heading}</p>
-      <p className="text-2xl font-light pb-4">{homeConfig.subHeading}</p>
+    <SectionWrapper className="min-h-screen">
+      <Link className={buttonVariants({variant: 'default', size: 'sm', className: "rounded-3xl text-sm"})} href={siteConfig.links.twitter} target="_blank">@fullstack_nyc</Link>
+      <p className="text-sm font-mono uppercase">Exactly what you ask for</p>
+      <p className="text-6xl font-extrabold">{homeConfig.heading}</p>
+      <p className="text-2xl pb-4">{homeConfig.subHeading}</p>
 <div className=" inline-flex space-x-2">
       <Link
           className={buttonVariants({
             variant: "default",
-            className: "capitalize",
+            className: "capitalize rounded-3xl",
           })}
        href={homeConfig.btnURL}>{homeConfig.btnText}</Link>
       <Link

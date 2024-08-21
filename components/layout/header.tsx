@@ -7,20 +7,21 @@ import { buttonVariants } from "../ui/button";
 export default function Header() {
   return (
     <header className="container z-40 bg-background">
-    <div className="flex h-20 items-center justify-between py-6">
-      <MainNav items={marketingConfig.mainNav} />
-      <nav>
-        <Link
-          href="/signup"
-          className={cn(
-            buttonVariants({ variant: "outline", size: "sm" }),
-            "px-4"
-          )}
-        >
-          Get Started
-        </Link>
-      </nav>
-    </div>
-  </header>
+      <div className="flex h-20 items-center justify-between py-6">
+        <MainNav items={marketingConfig.mainNav} />
+        <nav>
+          <Link
+            href="/signup"
+            className={buttonVariants({
+              variant: "outline",
+              size: "sm",
+              className: "px-4 rounded-3xl",
+            })}
+          >
+            Contact
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
 }
