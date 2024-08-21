@@ -4,7 +4,7 @@ import { MarketingConfig } from "@/types";
 export const marketingConfig: MarketingConfig = {
   mainNav: [
     {
-      title: "Projects",
+      title: "Work",
       href: "/projects",
     },
     {
@@ -18,6 +18,14 @@ export const marketingConfig: MarketingConfig = {
       href: "/about",
     },
     {
+      title: "Work",
+      href: "/projects",
+    },
+    {
+      title: "Blog",
+      href: "/blog",
+    },
+    {
       title: "Pricing",
       href: "/pricing",
     },
@@ -28,14 +36,6 @@ export const marketingConfig: MarketingConfig = {
     {
       title: "FAQs",
       href: "/faq",
-    },
-    {
-      title: "Terms",
-      href: "/terms",
-    },
-    {
-      title: "Privacy",
-      href: "/privacy",
     },
   ],
 };

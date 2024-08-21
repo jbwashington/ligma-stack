@@ -106,7 +106,7 @@ export function SectionWrapper({
     <section
       id={id}
       className={cn(
-        "p-24 space-y-4",
+        "px-8 py-4 space-y-4",
         inverted
           ? "bg-foreground text-background"
           : "bg-background text-foreground",

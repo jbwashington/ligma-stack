@@ -10,8 +10,6 @@ export default function Home() {
     <>
       <CTASection />
       <ProjectsSection projects={projects} />
-      <FeaturesSection />
-      <IdeasSection />
       <BookingSection />
     </>
   );
