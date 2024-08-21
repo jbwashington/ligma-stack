@@ -1,16 +1,15 @@
 import { Icons } from "@/components/layout/icons";
 import { MarketingConfig } from "@/types";
-import { time } from "console";
 
 export const marketingConfig: MarketingConfig = {
   mainNav: [
     {
-      title: "Pricing",
-      href: "/pricing",
+      title: "Projects",
+      href: "/projects",
     },
     {
-      title: "About",
-      href: "/about",
+      title: "Blog",
+      href: "/blog",
     },
   ],
   footerNav: [
@@ -27,15 +26,15 @@ export const marketingConfig: MarketingConfig = {
       href: "/services",
     },
     {
-      title: "Frequently Asked Questions",
+      title: "FAQs",
       href: "/faq",
     },
     {
-      title: "Terms and Conditions",
+      title: "Terms",
       href: "/terms",
     },
     {
-      title: "Privacy Policy",
+      title: "Privacy",
       href: "/privacy",
     },
   ],
@@ -44,10 +43,8 @@ export const marketingConfig: MarketingConfig = {
 export const homeConfig = {
   heading: "Custom software solutions for businesses",
   subHeading: "Delivering industry standard web applications with no ambiguity.",
-  btnText: "Get started",
-  btnURL: "/pricing",
-  featureBtnText: "Contact sales",
-  featureBtnUrl: "#booking",
+  btnText: "Hire us",
+  btnURL: "#booking",
 };
 
 export const featuresConfig = {

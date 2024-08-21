@@ -15,10 +15,10 @@ export default function Header() {
             className={buttonVariants({
               variant: "outline",
               size: "sm",
-              className: "px-4 rounded-3xl",
+              className: "px-4 rounded-3xl capitalize",
             })}
           >
-            Contact
+            Hire us
           </Link>
         </nav>
       </div>
