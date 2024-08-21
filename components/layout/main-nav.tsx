@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Icons } from "./icons";
 import { MobileNav } from "./mobile-nav";
+import { FileStackIcon, SquareStack, SquareStackIcon } from "lucide-react";
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -20,9 +21,8 @@ export function MainNav({ items, children }: MainNavProps) {
 
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Icons.fullStackTechLogo className="w-6 h-fit" />
-        <span className="hidden font-bold sm:inline-block">
+      <Link href="/" className="hidden items-center space-x-1 md:flex">
+        <span className="hidden sm:inline-block font-extrabold font-mono text-2xl italic uppercase leading-loose">
           {siteConfig.name}
         </span>
       </Link>

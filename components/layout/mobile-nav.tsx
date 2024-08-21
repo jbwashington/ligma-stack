@@ -23,7 +23,9 @@ export function MobileNav({ items, children }: MobileNavProps) {
     >
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
         <Link href="/" className="flex items-center space-x-2">
-        <Icons.fullStackTechLogo className="w-6 h-fit" />
+<h1 className='font-extrabold font-mono text-2xl italic uppercase leading-loose'>
+        {siteConfig.name}
+</h1>
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
           {items.map((item, index) => {
