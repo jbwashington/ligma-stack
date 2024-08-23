@@ -6,7 +6,6 @@ export const PostsSection = async ({posts}:{posts: Post[]}) => {
 
     return (
       <SectionWrapper>
-        <H1>Articles</H1>
         {posts.map((post, idx) => (
           <PostCard key={idx} {...post} />
         ))}

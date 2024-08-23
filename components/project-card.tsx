@@ -7,7 +7,7 @@ import { ExternalLink } from "lucide-react";
 export const ProjectCard = async (project: Project) => {
   return (
     <Link href={`https://${project.title}`}>
-      <Card className="flex flex-col relative">
+      <Card className="flex flex-col relative min-h-full">
         <CardHeader className="max-w-52">
           <div className="space-y-2">
             <div className="inline-flex space-x-2">
@@ -30,7 +30,7 @@ export const ProjectCard = async (project: Project) => {
             </CardDescription>
           </div>
         </CardHeader>
-        <ExternalLink className="h-4 w-4 absolute bottom-2 right-2 text-muted-foreground" />
+        <ExternalLink className="h-4 w-4 absolute bottom-2 right-2 text-muted-foreground m-2" />
       </Card>
     </Link>
   );

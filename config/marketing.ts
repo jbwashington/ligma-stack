@@ -9,7 +9,7 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: "Blog",
-      href: "/blog",
+      href: "/posts",
     },
   ],
   footerNav: [
@@ -23,7 +23,7 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: "Blog",
-      href: "/blog",
+      href: "/posts",
     },
     {
       title: "Pricing",

@@ -4,8 +4,8 @@ import { bookingConfig } from "@/config/marketing";
 
 export const BookingSection = async () => {
   return (
-    <SectionWrapper id="booking" className="space-y-4">
-      <H1>{bookingConfig.subtitle}</H1>
+    <SectionWrapper id="booking">
+      <H1 className="py-8">{bookingConfig.subtitle}</H1>
       <BookingForm />
     </SectionWrapper>
   );

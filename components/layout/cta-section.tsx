@@ -19,7 +19,7 @@ export const CTASection = async () => {
         @fullstack_nyc
       </Link>
       <p className="text-sm font-mono uppercase">Exactly what you ask for</p>
-      <p className="text-7xl font-extrabold">{homeConfig.heading}</p>
+      <p className="text-7xl font-extrabold max-w-2xl">{homeConfig.heading}</p>
       <p className="text-2xl pb-4">{homeConfig.subHeading}</p>
       <div className=" inline-flex space-x-2">
         <Link
